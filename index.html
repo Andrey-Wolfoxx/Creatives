@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" />
+
+	<!-- Favicons-->
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
+	<title>Creatives</title>
+</head>
+
+<body>
+
+<!-- Sprite -->
+<svg style="display: none;">
+
+<symbol id="facebook" viewBox="0 0 24 24">
+	<g>
+		<path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+	</g>
+</symbol>
+
+<symbol id="twitter" viewBox="0 0 512 512">
+	<g>
+		<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"/>
+	</g>
+</symbol>
+
+<symbol id="skype" viewBox="0 0 512 512">
+	<g>
+		<path d="m374 512c-27.851562 0-54.324219-8.109375-77.125-23.546875-73.871094 12.914063-151.433594-9.257813-207.753906-65.574219-56.292969-56.296875-78.492188-133.851562-65.574219-207.753906-15.4375-22.800781-23.546875-49.273438-23.546875-77.125 0-76.09375 61.90625-138 138-138 27.851562 0 54.324219 8.109375 77.125 23.546875 161.027344-28.148437 301.582031 111.714844 273.328125 273.328125 15.4375 22.800781 23.546875 49.273438 23.546875 77.125 0 76.09375-61.90625 138-138 138zm-60.132812-60.617188c17.328124 13.488282 38.121093 20.617188 60.132812 20.617188 54.035156 0 98-43.960938 98-98 0-22.011719-7.128906-42.804688-20.617188-60.132812-3.632812-4.667969-5.015624-10.703126-3.769531-16.484376 29.984375-139.589843-94.375-262.777343-232.996093-232.996093-5.777344 1.242187-11.816407-.136719-16.484376-3.769531-17.328124-13.488282-38.121093-20.617188-60.132812-20.617188-54.035156 0-98 43.960938-98 98 0 22.011719 7.128906 42.804688 20.617188 60.132812 3.632812 4.667969 5.015624 10.703126 3.769531 16.484376-29.917969 139.277343 94.050781 262.84375 232.996093 232.996093 5.753907-1.238281 11.796876.121094 16.484376 3.769531zm40.800781-136.382812c0-54.007812-68.277344-70.515625-83.558594-75.207031-31.65625-9.714844-73.777344-20.546875-73.777344-42.792969 0-21.140625 26.867188-39 58.667969-39 25.300781 0 48.367188 11.457031 56.097656 27.859375 4.710938 9.988281 16.628906 14.273437 26.621094 9.5625 9.988281-4.710937 14.269531-16.625 9.5625-26.617187-15.738281-33.386719-54.875-50.804688-92.28125-50.804688-58.195312 0-98.667969 37.84375-98.667969 79 0 54.007812 68.277344 70.515625 83.558594 75.207031 31.65625 9.714844 73.777344 20.546875 73.777344 42.792969 0 21.140625-26.867188 39-58.667969 39-25.300781 0-48.367188-11.457031-56.097656-27.859375-4.710938-9.988281-16.628906-14.273437-26.621094-9.5625-9.988281 4.710937-14.269531 16.625-9.5625 26.617187 15.738281 33.386719 54.875 50.804688 92.28125 50.804688 58.195312 0 98.667969-37.84375 98.667969-79zm0 0"/>
+	</g>
+</symbol>
+
+<symbol id="linkedin" viewBox="0 0 510 510">
+	<g>
+		<path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+			M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
+			S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
+			V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z"/>
+	</g>
+</symbol>
+</svg>
+
+
+
+<!-- Header -->
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__logo">
+				<img src="img/logo/Logo.png" alt="">
+			</div>
+
+			<div class="header_inner-right">
+				<nav class="header__nav">
+					<a href="#" class="nav__link">Home</a>
+					<a href="#" class="nav__link">Pages</a>
+					<a href="#" class="nav__link">Features</a>
+					<a href="#" class="nav__link">Extensions</a>
+					<a href="#" class="nav__link">Tutorials</a>
+					<a href="#" class="nav__link">Contact us</a>
+				</nav>
+
+				<div class="social">
+					<a href="#" class="social__item" target="_blank"> 
+						<svg class="social__icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+
+					<a href="#" class="social__item" target="_blank">
+						<svg class="social__icon">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" target="_blank">
+						<svg class="social__icon">
+							<use xlink:href="#skype"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" target="_blank">
+						<svg class="social__icon">
+							<use xlink:href="#linkedin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			
+			<button class="burger" type="button">
+				<span class="burger__item">Menu</span>
+			</button>
+		</div>
+	</div>
+</header>
+
+<!-- Intro -->
+<div class="intro">
+	<div class="container">
+		<div class="intro__inner">
+			<h1 class="intro__title">Creatives</h1>
+			<h2 class="intro__subtitle">Power by PSDfreebies.com</h2>
+			<a class="intro__btn" href="#">
+				<div class="intro__btn-txt">Scroll Down</div>
+				<div class="intro__btn-img" href="#"></div>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- Agency -->
+<div class="agency">
+	<div class="container">
+		<div class="agency__title">
+			<h2>We Are An Awesome Agency</h2>
+		</div>
+		<div class="agency__feature">
+			<div class="agency__feature-item">
+				<div class="agency__feature-icon">
+					<img class="" src="img/agency/feature1.png" alt="">
+				</div>
+				<h3 class="agency__feature-header">Feature one</h3>
+				<p class="agency__feature-txt">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus </p>
+			</div>
+
+			<div class="agency__feature-item">
+				<div class="agency__feature-icon">
+					<img class="" src="img/agency/feature1.png" alt="">
+				</div>
+				<h3 class="agency__feature-header">Feature two</h3>
+				<p class="agency__feature-txt">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus </p>
+			</div>
+
+			<div class="agency__feature-item">
+				<div class="agency__feature-icon">
+					<img class="" src="img/agency/feature3.png" alt="">
+				</div>
+				<h3 class="agency__feature-header">Feature three</h3>
+				<p class="agency__feature-txt">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus </p>
+			</div>
+
+			<div class="agency__feature-item">
+				<div class="agency__feature-icon">
+					<img class="" src="img/agency/feature4.png" alt="">
+				</div>
+				<h3 class="agency__feature-header">Feature four</h3>
+				<p class="agency__feature-txt">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus </p>
+			</div>
+		</div>	
+		</div>
+	</div>
+</div>
+
+<!-- News -->
+<div class="news">
+	<div class="news__description">
+		<div class="container">
+			<div class="description__inner">
+				<div class="description__subtitle">Jan 4, 2016   |   In Culture</div>
+				<h2 class="description__title">Akita Inu Dog</h2>
+				<div class="description__txt">
+					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					<p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="news__photo">
+		<img class="news__photo-img" src="img/news/img2.jpg" alt="">
+	</div>
+
+	<div class="news__photo">
+		<img class="news__photo-img" src="img/news/img3.jpg" alt="">
+	</div>
+
+	<div class="news__description-2">
+			<div class="description__inner">
+				<div class="description__subtitle">Jan 4, 2016   |   In Culture</div>
+				<h2 class="description__title">Akita Inu Dog</h2>
+				<div class="description__txt">
+					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					<p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere </p>
+				</div>
+			</div>
+	</div>
+</div>
+
+<!-- Blog -->
+<div class="container">
+	<div class="blog">
+		<div class="blog__header">
+			<h2 class="blog__header-1">Let's blog</h2>
+			<h3 class="blog__header-2">We love clean design and advanced digital solutions.</h3>
+		</div>
+
+		<div class="blog__inner">
+			<div class="blog__inner-works">
+				<img class="blog__inner-img" src="img/blog/blog1.jpg" alt="">
+				<h2 class="blog__inner-header">Fresh Summer Campaign</h2>
+				<p class="blog__inner-txt">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue </p>
+			</div>
+
+			<div class="blog__inner-works">
+				<img class="blog__inner-img" src="img/blog/blog2.jpg" alt="">
+				<h2 class="blog__inner-header">Fresh Summer Campaign</h2>
+				<p class="blog__inner-txt">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue </p>
+			</div>
+
+			<div class="blog__inner-works">
+				<img class="blog__inner-img" src="img/blog/blog3.jpg" alt="">
+				<h2 class="blog__inner-header">Fresh Summer Campaign</h2>
+				<p class="blog__inner-txt">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue </p>
+			</div>
+
+			<div class="blog__inner-works">
+				<img class="blog__inner-img" src="img/blog/blog1.jpg" alt="">
+				<h2 class="blog__inner-header">Fresh Summer Campaign</h2>
+				<p class="blog__inner-txt">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Action -->
+<div class="action">
+	<div class="container">
+		<div class="action__inner">
+			<div class="action__item">
+				<img src="img/action-icon.png" alt="" class="action__icon">
+				<p class="action__txt">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			</div>
+			<div class="action__item">
+				<img src="img/action-icon.png" alt="" class="action__icon">
+				<p class="action__txt">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Features -->
+<div class="features">
+	<div class="container">
+		<div class="features__inner">
+			<div class="features__item">
+				<h2 class="features__header">Akita Inu Dog</h2>
+				<p class="features__txt">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				<ul class="features__list">
+					<li>Fully Responsive Design</li>
+					<li>High Quality Code</li>
+					<li>Different Headers & Layout</li>
+				</ul>
+			</div>
+			
+			<div class="features__iphone">
+				<img class="features__img" src="img/features/iphone.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Team-->
+<div class="container">
+	<div class="team">
+		<div class="team__header">
+			<h2 class="team__header-1">Our Team</h2>
+			<h3 class="team__header-2">Sales long tail influencer pitch release niche market.</h3>
+		</div>
+
+		<div class="team__inner">
+			<div class="team__item">
+				<div class="item__img">
+					<img src="img/team/team-1.jpg" alt="">
+				</div>
+				<div class="item__description">
+					<div class="item__header">
+						<h2>JOHN SNOW</h2>
+					</div>
+					<div class="item__txt">
+						<p>GEO</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="team__item">
+				<div class="item__img">
+					<img src="img/team/team-2.jpg" alt="">
+				</div>
+				<div class="item__description">
+					<div class="item__header">
+						<h2>LADY SANSA</h2>
+					</div>
+					<div class="item__txt">
+						<p>WebDesigner</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="team__item">
+				<div class="item__img">
+					<img src="img/team/team-3.jpg" alt="">
+				</div>
+				<div class="item__description">
+					<div class="item__header">
+						<h2>DAVID SMITH</h2>
+					</div>
+					<div class="item__txt">
+						<p>Photographer</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="team__item">
+				<div class="item__img">
+					<img src="img/team/team-4.jpg" alt="">
+				</div>
+				<div class="item__description">
+					<div class="item__header">
+						<h2>LADY SANSA</h2>
+					</div>
+					<div class="item__txt">
+						<p>Photographer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Contact -->
+<div class="contact">
+	<div class="container">
+		<div class="contact__inner">
+			<div class="contact__header">
+				<h2>We’d love to hear about your project.</h2>
+			</div>
+			<form class="form" action="#" method="POST" enctype="multipart/form-data">
+				<input class="form__inner" type="text" tabindex="1" placeholder="Name" name="username">
+				<input class="form__inner" type="text" tabindex="2" placeholder="Email" name="usetemail">
+				<input class="form__inner" type="tel" tabindex="3" placeholder="Phone" name="userphone">			
+				<textarea class="form__message" placeholder="Message" name="message"></textarea>
+				<button class="form__btn" tabindex="5" type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer__map">
+		<img class="map__img" src="img/map.jpg" alt="">
+	</div>
+
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__item">
+				<p class="footer__text">© 2016 PSDfreebies.com – All Right Reserved</p>
+			</div>
+
+			<div class="footer__item">
+				<p class="footer__text">Design by: PSDFreebies.com</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html> 
