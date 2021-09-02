@@ -184,7 +184,7 @@ p {
 }
 
 .nav__link:first-child {
-	padding-left: 10px;
+	margin-left: 10px;
 }
 
 .nav__link:hover {
