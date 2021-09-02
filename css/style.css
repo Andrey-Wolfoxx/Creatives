@@ -922,7 +922,7 @@ textarea::placeholder {
 
 	.news__photo {
 		width: 100%;
-		border-bottom: 5px solid #fff;
+		border-bottom: 3px solid #fff;
 	}
 
 	.blog {
@@ -1014,6 +1014,11 @@ textarea::placeholder {
 
 	.agency__title {
 		font-size: 25px;
+	}
+
+	.agency__feature-item {
+		width: 100%;
+		padding-bottom: 40px;
 	}
 
 	.blog__inner-works {
